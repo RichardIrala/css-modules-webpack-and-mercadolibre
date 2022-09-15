@@ -1,5 +1,6 @@
 const path = require("path");
 const liveServer = require("live-server");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 const mode = process.env.NODE_ENV;
 
@@ -14,7 +15,14 @@ module.exports = {
   mode,
   watch: mode == "development" ? true : false,
   entry: "./src/index.tsx",
-  resolve: { extensions: [".tsx", ".ts", ".js"] },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+    plugins: [
+      new TsconfigPathsPlugin({
+        /*opciones*/
+      }),
+    ],
+  },
   module: {
     rules: [
       {
