@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap");
+
+.container {
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  border: none;
+  background: #817d81;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-family: "Roboto Serif", serif;
+  border-radius: 5px;
+  width: 550px;
+}
+
+.container:hover {
+  background: rgb(190, 38, 38);
+  transition: 2s;
+}
+.secundaryContainer {
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  justify-content: left;
+}
+.image {
+  width: 100px;
+  height: 100px;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.title {
+  font-size: 24px;
+  text-align: left;
+}
+.textContent {
+  font-size: 20px;
+  text-align: left;
+}
