@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap");
 .form {
   background: #fff159;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Roboto Serif", serif;
 }
 
 .input {
@@ -11,6 +13,9 @@
   padding-bottom: 7px;
   font-size: 20px;
   width: 80%;
+}
+.input::-webkit-input-placeholder {
+  font-family: "Roboto Serif", serif;
 }
 
 .mlLogo {
