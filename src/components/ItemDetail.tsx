@@ -26,14 +26,7 @@ export const ItemDetail = (props) => {
           />
         ))}
       </Slider>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          maxWidth: "400px",
-          marginTop: 50,
-        }}
-      >
+      <div className={styles.textContainer}>
         <h1 className={styles.title}>{props.title}</h1>
         <span className={styles.generalText}>$ {props.price}</span>
       </div>
