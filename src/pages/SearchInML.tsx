@@ -12,7 +12,7 @@ export const SearchInML = () => {
 
   return products ? (
     //Productos buscados por query
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", padding: 20 }}>
       {products.map((product, index) => (
         <SearchResultItem
           key={index}
