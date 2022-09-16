@@ -1,4 +1,5 @@
-import { useItemResult, useSearchResults } from "hooks/useSearchResults";
+import { useItemResult } from "hooks/useItemResult";
+import { useSearchResults } from "hooks/useSearchResults";
 import React from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../components/ItemDetail";

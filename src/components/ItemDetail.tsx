@@ -1,5 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+
+import styles from "./ItemDetail.css";
+
 export const ItemDetail = (props) => {
   const settings = {
     dots: true,
@@ -12,21 +15,7 @@ export const ItemDetail = (props) => {
   };
 
   return (
-    <div
-      style={{
-        boxSizing: "border-box",
-        flexWrap: "wrap",
-        background: "#817d81",
-        padding: "40px",
-        margin: "auto",
-        alignItems: "center",
-        marginTop: "20px",
-        marginBottom: "20px",
-        gap: "40px",
-        overflow: "hidden",
-        width: "400px",
-      }}
-    >
+    <div className={styles.container}>
       <Slider {...settings}>
         {props.pictures.map((imagen, index) => (
           <img
@@ -45,8 +34,8 @@ export const ItemDetail = (props) => {
           marginTop: 50,
         }}
       >
-        <h1>{props.title}</h1>
-        <span>$ {props.price}</span>
+        <h1 className={styles.title}>{props.title}</h1>
+        <span className={styles.generalText}>$ {props.price}</span>
       </div>
     </div>
   );

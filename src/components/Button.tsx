@@ -1,14 +1,10 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import styles from "./Button.css";
 
 type ButtonProps = {
   children: string;
 };
 
 export const Button = (props: ButtonProps) => {
-  return (
-    <button style={{ background: "aqua", marginLeft: "10px" }}>
-      {props.children}
-    </button>
-  );
+  return <button className={styles.button}>{props.children}</button>;
 };
