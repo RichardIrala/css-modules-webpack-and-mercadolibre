@@ -20,8 +20,28 @@ export const productsAtom = selector({
         `https://api.mercadolibre.com/sites/MLA/search?q=${query}`
       );
       const resjson = await res.json();
-      console.log(resjson.results);
+
       return resjson.results;
+    }
+  },
+});
+
+//idState itemDetail
+export const idState = atom({
+  key: "idState",
+  default: "",
+});
+
+export const itemDetailState = selector({
+  key: "itemDetailState",
+  get: async ({ get }) => {
+    const id = get(idState);
+    if (id) {
+      const res = await fetch("https://api.mercadolibre.com/items/" + id);
+
+      let product = await res.json();
+
+      return product;
     }
   },
 });
