@@ -1,0 +1,23 @@
+.form {
+  background: #fff159;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding-top: 5px;
+  padding-bottom: 7px;
+  font-size: 20px;
+  width: 80%;
+}
+
+.mlLogo {
+  width: 44px;
+  height: 32px;
+  display: inline-block;
+  background: no-repeat;
+  background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.5/mercadolibre/logo__small.png);
+  margin-right: 10px;
+}

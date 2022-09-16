@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap");
+.container {
+  font-family: "Roboto Serif", serif;
+  flex-wrap: wrap;
+  background: #a59494;
+  padding: 40px;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 40px;
+  overflow: hidden;
+  width: 400px;
+  border-radius: 24px;
+}
+
+.title {
+  font-size: 24px;
+}
+.generalText {
+  font-size: 20px;
+}
